@@ -9,7 +9,7 @@
 - [x] Classes necessaries
 - [x] Excepcions
 - [x] Codi exemple lectura fitxer
-- [ ] Codi exemple escriure fitxer
+- [x] Codi exemple escriure fitxer
 <p align="center">
  <img src="https://user-images.githubusercontent.com/91245889/197552609-3b5f1be9-f1c7-4011-a12d-6ce4a8988a11.png">
 </p>
@@ -75,16 +75,92 @@ Output:
   <img src="https://user-images.githubusercontent.com/91245889/197555697-5e5b4d6b-4ca9-4797-9c73-40a4617277f1.png">
 </p>
 
+<ins>**EXAMPLE WRITING FILE**</ins>
 
+~~~
+import org.w3c.dom.Attr;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.File;
+
+public class DOMWriteFile {
+    public static void main(String[] args) {
+
+        try {
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.newDocument();
+
+            //ROOT ELEMENT
+            Element rootElement = doc.createElement("catalog");
+            doc.appendChild(rootElement);
+
+            //CD ELEMENT
+            Element cdElement = doc.createElement("cd");
+            rootElement.appendChild(cdElement);
+
+            //CD ELEMENT ATTRIBUTE
+            Attr cdIdAttr = doc.createAttribute("id");
+            cdIdAttr.setValue("1");
+            cdElement.setAttributeNode(cdIdAttr);
+
+            //CD CHILD ELEMENTS
+            Element titleElement = doc.createElement("title");
+            titleElement.appendChild(doc.createTextNode("CD1"));
+            cdElement.appendChild(titleElement);
+
+            Element artistElement = doc.createElement("artist");
+            artistElement.appendChild(doc.createTextNode("ARTIST 1"));
+            cdElement.appendChild(artistElement);
+
+            Element countryElement = doc.createElement("country");
+            countryElement.appendChild(doc.createTextNode("COUNTRY 1"));
+            cdElement.appendChild(countryElement);
+
+            Element companyElement = doc.createElement("company");
+            companyElement.appendChild(doc.createTextNode("COMPANY 1"));
+            cdElement.appendChild(companyElement);
+
+            Element priceElement = doc.createElement("price");
+            priceElement.appendChild(doc.createTextNode("PRICE 1"));
+            cdElement.appendChild(priceElement);
+
+            Element yearElement = doc.createElement("year");
+            yearElement.appendChild(doc.createTextNode("YEAR 1"));
+            cdElement.appendChild(yearElement);
+
+            //XML DOCUMENT CREATION
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(new File("catalog_replication.xml"));
+
+            transformer.transform(source,result);
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+~~~
+Result:
+<p>
+  <img src="https://user-images.githubusercontent.com/91245889/200117849-3c78691a-3d4d-4b66-9a91-286556432a67.png">
+</p>
  
-
 ### SAX
-- [x] Que es
-- [x] Com funciona
-- [x] Classes necessaries
-- [x] Excepcions
-- [x] Codi exemple lectura fitxer
+- [ ] Que es
+- [ ] Com funciona
+- [ ] Classes necessaries
+- [ ] Excepcions
+- [ ] Codi exemple lectura fitxer
 - [ ] Codi exemple escriure fitxer
 
 
@@ -93,16 +169,16 @@ Output:
 
 ### XPath
 
-- [x] Que es
-- [x] Que puc fer amb XPath
-- [x] Cl
-- [x] Excepcions
-- [x] Codi exemple lectura fitxer
-- [ ] Codi exemple escriure fitxer
+- [ ] Que es
+- [ ] Que puc fer amb XPath
+- [ ] Exemple de com consultar els Cds anteriors a 1990
 
 
 ### XQuery
 
+- [ ] Que es
+- [ ] Que puc fer amb XPath
+- [ ] Exemple de com consultar els Cds més barats de 10$
 
 
 ### Recursos
