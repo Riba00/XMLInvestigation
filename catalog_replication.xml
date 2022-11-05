@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog>
+    <cd id="1">
+        <title>CD1</title>
+        <artist>ARTIST 1</artist>
+        <country>COUNTRY 1</country>
+        <company>COMPANY 1</company>
+        <price>PRICE 1</price>
+        <year>YEAR 1</year>
+    </cd>
+</catalog>
+
+
