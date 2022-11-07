@@ -1,13 +1,14 @@
 # investigacioXML
-<p>
-  <img src="">
+<p align ="center">
+  <img src="https://user-images.githubusercontent.com/91245889/200307389-ca0a263f-0785-4115-b7fa-d9a1303f0ce6.png">
 </p>
 
+
 ## Taula continguts
-- [DOM](#DOM)
-- [SAX](#SAX)
+- [DOM](#dom)
+- [SAX](#sax)
 - [xPath](#xpath)
-- [xQuery](#xQuery)
+- [xQuery](#xquery)
 
 ### DOM
 
@@ -34,7 +35,7 @@ Once the file is loaded, thanks to some classes we can interact with the file:
 
 <ins>**EXAMPLE READING FILE**</ins>
 
-You can see a reading file example in this project on class **DOMReadFile.java**
+You can see a reading file example in this project on class **src/DOMReadFile.java**
 
 Output:
 <p>
@@ -75,10 +76,12 @@ Result:
   100 standard functions, which allow you to perform operations for handling strings, numerical operations, date
   comparisons.
 
-  In this project you have an example how to do an xPath expression in Java. Check **xPathExample.java**
+  In this project you have an example how to do an xPath expression in Java. Check **src/xPathExample.java**
+
 Result:
+
 <p>
-  <img src="">
+  <img src="https://user-images.githubusercontent.com/91245889/200308028-0958077f-cf86-4724-bf63-e697f6d4145a.png">
 </p>
 
 ### XQuery
