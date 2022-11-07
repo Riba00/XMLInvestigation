@@ -53,7 +53,7 @@ Result:
 
   SAX is also a parser for XML documents but it does not create a parse tree. Items are processed in the same order as they appear in the document. The main difference between DOM and SAX is that while the former has access to the entire document, that is, all elements and attributes are available at once, in SAX only the current element is available.
   
-  SAX is responsible for traversing the structure of the document showing events that correspond to the elements that are is finding
+  SAX is responsible for traversing the structure of the document showing events that correspond to the elements that are is finding.
   
   We need some classes to read a file using SAX:
   * SAX ParserFactory
