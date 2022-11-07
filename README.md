@@ -24,7 +24,7 @@ DOM is, regardless of the language, a model used for handling files. A tree of o
 DOM reads an entire document. It is useful when reading small to medium size XML files. It is a tree-based parser and a little slow when compared to SAX and occupies more space when loaded into memory. We can insert and delete nodes using the DOM API.
 It is important to put all the code inside a try and catch it with a catch to prevent possible errors that could happen.
 
-Once the file is loaded, thanks to some classes we can interact with the file:
+Thanks to some classes we can interact with the file:
 
 * DocumentBuilderFactory
 * DocumentBuilder
@@ -51,28 +51,26 @@ Result:
 
 ### SAX
 
-  SAX is also a parser for XML documents but it does not create a parse tree. Items are processed in the same order as
-  they appear in the document. The main difference between DOM and SAX is that while the former has access to the entire
-  document, that is, all elements and attributes are available at once, in SAX only the current element is available.
+  SAX is also a parser for XML documents but it does not create a parse tree. Items are processed in the same order as they appear in the document. The main difference between DOM and SAX is that while the former has access to the entire document, that is, all elements and attributes are available at once, in SAX only the current element is available.
+  
+  SAX is responsible for traversing the structure of the document showing events that correspond to the elements that are is finding
+  
+  We need some classes to read a file using SAX:
+  * SAX ParserFactory
+  * SAX Parser
+  * Handler
+  
+  And also, we need to catch the exceptions: ParserConfigurationException, SAXException and IOException.
 
-- [ ] Com funciona
-- [ ] Classes necessaries
-- [ ] Excepcions
-- [ ] Codi exemple lectura fitxer
 - <ins>**EXAMPLE READING FILE**</ins>
 
 
-- [ ] Codi exemple escriure fitxer
-- <ins>**EXAMPLE WRITING FILE**</ins>
 
 ### XPath
 
-  The XPath language is the system used to browse and query the elements and attributes contained in the structure of an
-  XML document.
+  The XPath language is the system used to browse and query the elements and attributes contained in the structure of an XML document.
 
-  XPath is used by programmers to define advanced search criteria and specific calculations. It contains a library of
-  100 standard functions, which allow you to perform operations for handling strings, numerical operations, date
-  comparisons.
+  XPath is used by programmers to define advanced search criteria and specific calculations. It contains a library of 100 standard functions, which allow you to perform operations for handling strings, numerical operations, date comparisons.
 
   In this project you have an example how to do an xPath expression in Java. Check **src/xPathExample.java**
 
