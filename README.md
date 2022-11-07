@@ -87,6 +87,19 @@ Result:
 
 ### XQuery
 
-- [ ] Que es
-- [ ] Que puc fer amb XQuery
+
+XQuery is a standardized language for combining documents, databases, Web pages and almost anything else. It is very widely implemented. It is powerful and easy to learn. XQuery is replacing proprietary middleware languages and Web Application development languages.
+
+XQuery is replacing complex Java or C++ programs with a few lines of code. XQuery is simpler to work with and easier to maintain than many other alternatives.
+
+It can be used for following things:
+
+* To extract information to use in a web service.
+* To generates summary reports.
+* To transform XML data to XHTML.
+* Search Web documents for relevant information.
 - [ ] Exemple de com consultar els Cds més barats de 10$
+
+
+![image](https://user-images.githubusercontent.com/91245889/200352817-2e026551-74a8-430b-9524-bf641a34676b.png)
+
