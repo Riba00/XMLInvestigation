@@ -4,7 +4,7 @@
 </p>
 
 
-## Taula continguts
+## Content Table
 - [DOM](#dom)
 - [SAX](#sax)
 - [xPath](#xpath)
@@ -12,18 +12,16 @@
 
 ### DOM
 
+
+
+
+DOM is, regardless of the language, a model used for handling files. A tree of objects called **nodes** is generated and represent each tag in the XML document. These nodes can be of different types (documents, elements, attributes...) and are related to each other through a parent-child relationship.
+
 <p align="center">
  <img src="https://user-images.githubusercontent.com/91245889/197552609-3b5f1be9-f1c7-4011-a12d-6ce4a8988a11.png">
 </p>
 
-
-DOM is, regardless of the language, a model used for handling files. A tree of objects called **nodes** is generated and
-represent each tag in the XML document. These nodes can be of different types (documents, elements, attributes...) and
-are related to each other through a parent-child relationship.
-
-DOM reads an entire document. It is useful when reading small to medium size XML files. It is a tree-based parser and a
-little slow when compared to SAX and occupies more space when loaded into memory. We can insert and delete nodes using
-the DOM API.
+DOM reads an entire document. It is useful when reading small to medium size XML files. It is a tree-based parser and a little slow when compared to SAX and occupies more space when loaded into memory. We can insert and delete nodes using the DOM API.
 It is important to put all the code inside a try and catch it with a catch to prevent possible errors that could happen.
 
 Once the file is loaded, thanks to some classes we can interact with the file:
