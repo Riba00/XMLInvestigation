@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="xqjri-20080114-133351" level="project" />
+    <orderEntry type="library" name="jar_files (1)" level="project" />
   </component>
 </module>
