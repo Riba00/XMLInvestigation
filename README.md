@@ -64,7 +64,12 @@ Result:
 
 - <ins>**EXAMPLE READING FILE**</ins>
 
+You can see an example on **src/SAXReadFile.java**
 
+Result:
+<p>
+  <img src="https://user-images.githubusercontent.com/91245889/200331608-d87c70f0-fb4d-468a-a093-4aed70367cd5.png">
+</p>
 
 ### XPath
 
