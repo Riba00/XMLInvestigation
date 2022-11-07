@@ -7,12 +7,12 @@ import java.util.List;
 
 public class CdsHandler extends DefaultHandler {
 
-    // List to hold CDs object
+    // CDS LIST
     private List<CD> cdList = null;
     private CD cd = null;
     private StringBuilder data = null;
 
-    // getter method for CD list
+    // METHOD TO GET THE CDS
     public List<CD> getCdList() {
         return cdList;
     }
@@ -29,11 +29,11 @@ public class CdsHandler extends DefaultHandler {
 
         if (qName.equalsIgnoreCase("CD")) {
             cd = new CD();
-            // initialize list
+            // LIST INIT
             if (cdList == null)
                 cdList = new ArrayList<>();
         } else if (qName.equalsIgnoreCase("title")) {
-            // set boolean values for fields, will be used in setting CD variables
+            // IDENTIFY THE ELEMENTS
             bTitle = true;
         } else if (qName.equalsIgnoreCase("artist")) {
             bArtist = true;
@@ -46,7 +46,7 @@ public class CdsHandler extends DefaultHandler {
         } else if (qName.equalsIgnoreCase("year")) {
             bYear = true;
         }
-        // create the data container
+        // DATA CONTAINER
         data = new StringBuilder();
     }
 
@@ -73,7 +73,7 @@ public class CdsHandler extends DefaultHandler {
         }
 
         if (qName.equalsIgnoreCase("CD")) {
-            // add CD object to list
+            // ADD CD TO LIST
             cdList.add(cd);
         }
     }

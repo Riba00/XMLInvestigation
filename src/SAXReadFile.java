@@ -10,29 +10,18 @@ import java.util.List;
 public class SAXReadFile {
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 
-//     FORMA 1 NO VA
-//        SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
-//        SAXParser saxParser = saxParserFactory.newSAXParser();
-//        File file = new File("cd_catalog.xml");
-//        CdsHandler handler = new CdsHandler();
-//
-//
-//
-//        ArrayList<CD> cds = handler.getCds();
-//
-//        System.out.println("aaaaaaa");
-//        saxParser.parse(file,handler);
-//        for (CD cd : cds){
-//            System.out.println(cd);
-
-
         try {
+            //DECLARE SAX PARSER
             SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
             SAXParser saxParser = saxParserFactory.newSAXParser();
+
+            //HANDLER TO IDENTIFY THE ELEMENTS
             CdsHandler handler = new CdsHandler();
 
+            //LOAD THE FILE
             saxParser.parse(new File("cd_catalog.xml"),handler);
 
+            //PRINT CDS
             List<CD> cdList = handler.getCdList();
             for (CD cd : cdList){
                 System.out.println(cd);
