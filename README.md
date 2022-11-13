@@ -10,9 +10,10 @@
 - [xPath](#xpath)
 - [xQuery](#xquery)
 
+
+All the examples are based on this [Docuemnt](cd_catalog.xml).
+
 ### DOM
-
-
 
 
 DOM is, regardless of the language, a model used for handling files. A tree of objects called **nodes** is generated and represent each tag in the XML document. These nodes can be of different types (documents, elements, attributes...) and are related to each other through a parent-child relationship.
@@ -33,7 +34,7 @@ Thanks to some classes we can interact with the file:
 
 <ins>**EXAMPLE READING FILE**</ins>
 
-You can see a reading file example in this project on class **src/DOMReadFile.java**
+You can see a reading file example [here](*src/DOMReadFile.java).
 
 Output:
 <p>
@@ -42,7 +43,7 @@ Output:
 
 <ins>**EXAMPLE WRITING FILE**</ins>
 
-In DOMWriteFile.java yo can see how to generate XML document.
+In [DOMWriteFile.java](src/DOMWriteFile.java) yo can see how to generate XML document ([document result](catalog_replication.xml)).
 
 Result:
 <p>
@@ -64,7 +65,7 @@ Result:
 
 - <ins>**EXAMPLE READING FILE**</ins>
 
-You can see an example on **src/SAXReadFile.java**
+You can see an [example](src/SAXReadFile.java) to get this:
 
 Result:
 <p>
@@ -77,7 +78,7 @@ Result:
 
   XPath is used by programmers to define advanced search criteria and specific calculations. It contains a library of 100 standard functions, which allow you to perform operations for handling strings, numerical operations, date comparisons.
 
-  In this project you have an example how to do an xPath expression in Java. Check **src/xPathExample.java**
+  In this project you have an [example](src/xPathExample.java) how to do an xPath expression in Java.
 
 Result:
 
@@ -98,8 +99,14 @@ It can be used for following things:
 * To generates summary reports.
 * To transform XML data to XHTML.
 * Search Web documents for relevant information.
-- [ ] Exemple de com consultar els Cds més barats de 10$
 
+To make a Java xQuery in a xml document, you have to read a xQuery sentence from a [document](cds.xqy), for example:
 
-![image](https://user-images.githubusercontent.com/91245889/200352817-2e026551-74a8-430b-9524-bf641a34676b.png)
+![Selecció_030](https://user-images.githubusercontent.com/91245889/201541900-1d0d1470-9ec9-4716-96b1-6837a675871a.png)
+
+And then, here you have the [code example](src/xQueryExample.java).
+
+The result is:
+
+![Selecció_031](https://user-images.githubusercontent.com/91245889/201541529-ed456cc4-236e-4f82-8e56-a05a8fabdcbe.png)
 
