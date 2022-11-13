@@ -7,7 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="xqjri-20080114-133351" level="project" />
     <orderEntry type="library" name="jar_files (1)" level="project" />
+    <orderEntry type="library" name="xqjri-20080114-133351" level="project" />
+    <orderEntry type="library" name="saxon9-xqj" level="project" />
+    <orderEntry type="library" name="saxon9he" level="project" />
+    <orderEntry type="library" name="saxon9-test" level="project" />
   </component>
 </module>
