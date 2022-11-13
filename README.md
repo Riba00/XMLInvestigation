@@ -11,7 +11,7 @@
 - [xQuery](#xquery)
 
 
-All the examples are based on this [Docuemnt](cd_catalog.xml).
+All the examples are based on this [Document](cd_catalog.xml).
 
 ### DOM
 
